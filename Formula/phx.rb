@@ -23,7 +23,9 @@ class Phx < Formula
         prefix.install Dir["dist/*"]
 
         # Set binary symlinks
-        bin.install_symlink prefix/"bin/phx"
+        Dir[prefix/"bin/*"].select { |f| File.executable?(f) }.each do |file|
+            bin.install_symlink file
+        end
     end
 
     test do
