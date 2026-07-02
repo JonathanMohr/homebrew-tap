@@ -21,13 +21,10 @@ class Phx < Formula
 
         # Install dist/
         prefix.install Dir["dist/*"]
-
-        # Set binary symlinks
-        bin.install_symlink prefix/"bin/phx"
     end
 
     test do
-        system "#{bin}/phx", "--version"
+        system "#{bin}/phx-lfs", "--version"
     end
 
 end
