@@ -21,15 +21,18 @@ class Phx < Formula
 
         # Install dist/
         prefix.install Dir["dist/*"]
+<<<<<<< HEAD
 
         # Set binary symlinks
         Dir[prefix/"bin/*"].select { |f| File.executable?(f) }.each do |file|
             bin.install_symlink file
         end
+=======
+>>>>>>> d205c7eb330d4a119456a94adf97389f8e27d91a
     end
 
     test do
-        system "#{bin}/phx", "--version"
+        system "#{bin}/phx-lfs", "--version"
     end
 
 end
