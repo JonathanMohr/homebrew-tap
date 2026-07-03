@@ -1,9 +1,9 @@
-class Phx < Formula
-    desc "Disk-image creation and manipulation"
-    homepage "https://github.com/JonathanMohr/PHX"
+class Scrib < Formula
+    desc "Text formatting tool"
+    homepage "https://github.com/JonathanMohr/scrib"
 
-    url "https://github.com/JonathanMohr/PHX/archive/refs/tags/v0.1.0-alpha.tar.gz"
-    sha256 "77d82469137015e3c9022510647a5046249e012eaa6ac87e92151546ba83ba69"
+    url "https://github.com/JonathanMohr/scrib/archive/refs/tags/v0.1.0-alpha.tar.gz"
+    sha256 "3a2b381d2d3a3a33c413161ee9c0d4b8fcb962536ee24313d25ac240d794855f"
 
     license "Apache-2.0"
 
@@ -31,7 +31,7 @@ class Phx < Formula
     end
 
     test do
-        system "#{bin}/phx-lfs", "--version"
+        system "#{bin}/scrib", "--version"
     end
 
 end

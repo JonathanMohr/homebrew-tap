@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Usage: ./get_sha256.sh <projekt> <version> [github_user]
+# Usage: ./get_sha256.sh <project> <version> [github_user]
 
-PROJECT="${1:?Usage: $0 <projekt> <version> [github_user]}"
-VERSION="${2:?Usage: $0 <projekt> <version> [github_user]}"
+PROJECT="${1:?Usage: $0 <project> <version> [github_user]}"
+VERSION="${2:?Usage: $0 <project> <version> [github_user]}"
 GH_USER="${3:-JonathanMohr}"
 
 URL="https://github.com/${GH_USER}/${PROJECT}/archive/refs/tags/${VERSION}.tar.gz"
