@@ -3,7 +3,7 @@ class Scrib < Formula
     homepage "https://github.com/JonathanMohr/scrib"
 
     url "https://github.com/JonathanMohr/scrib/archive/refs/tags/v0.1.0-alpha.tar.gz"
-    sha256 "3a2b381d2d3a3a33c413161ee9c0d4b8fcb962536ee24313d25ac240d794855f"
+    sha256 "8d1b24a928f519b73423b7a3e99423589e33b96c0aa6106486c83ee7a3f10ebd"
 
     license "Apache-2.0"
 
