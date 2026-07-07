@@ -2,8 +2,8 @@ class Scrib < Formula
     desc "Text formatting tool"
     homepage "https://github.com/JonathanMohr/scrib"
 
-    url "https://github.com/JonathanMohr/scrib/archive/refs/tags/v0.1.0-alpha.tar.gz"
-    sha256 "8d1b24a928f519b73423b7a3e99423589e33b96c0aa6106486c83ee7a3f10ebd"
+    url "https://github.com/JonathanMohr/scrib/archive/refs/tags/v0.1.0-alpha.2.tar.gz"
+    sha256 "37e9c8ae899264b2dd0eb444190b438242e07c7134971e31651d3f631f968a81"
 
     license "Apache-2.0"
 
@@ -11,7 +11,7 @@ class Scrib < Formula
     depends_on "lld" => :build
     depends_on "python@3.12" => :build
 
-    version "v0.1.0-alpha"
+    version "v0.1.0-alpha.2"
 
     def install
         # set PATH
