@@ -3,7 +3,7 @@ class Phx < Formula
     homepage "https://github.com/JonathanMohr/PHX"
 
     url "https://github.com/JonathanMohr/PHX/archive/refs/tags/v0.1.0-alpha.2.tar.gz"
-    sha256 "df2e6f332eb15d8438c77f6ea354a506006236b8d71ab497664f2530c06012d2"
+    sha256 "3b101f62c7af729b9a2955339d42c9c20a6c41356a0adaefad81a42d9582a5df"
 
     license "Apache-2.0"
 
