@@ -3,7 +3,7 @@ class Phx < Formula
     homepage "https://github.com/JonathanMohr/PHX"
 
     url "https://github.com/JonathanMohr/PHX/archive/refs/tags/v0.1.0-alpha.2.tar.gz"
-    sha256 "4cade60bda819b77d4e0de5751895b4f740d53da64a8826fef9793a6465392ee"
+    sha256 "df2e6f332eb15d8438c77f6ea354a506006236b8d71ab497664f2530c06012d2"
 
     license "Apache-2.0"
 
@@ -26,6 +26,7 @@ class Phx < Formula
     end
 
     test do
+        system "#{bin}/phx", "--version"
         system "#{bin}/phx-lfs", "--version"
     end
 
