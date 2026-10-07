@@ -7,6 +7,7 @@ class Phx < Formula
 
     license "Apache-2.0"
 
+    depends_on "nasm" -> :build
     depends_on "llvm" => :build
     depends_on "lld" => :build
     depends_on "python@3.12" => :build
