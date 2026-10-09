@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Usage: ./get_sha256.sh <project> <version> [github_user]
+# Usage: ./sha256.sh <project> <version> [github_user]
 
 PROJECT="${1:?Usage: $0 <project> <version> [github_user]}"
 VERSION="${2:?Usage: $0 <project> <version> [github_user]}"
