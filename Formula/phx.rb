@@ -5,7 +5,11 @@ class Phx < Formula
     url "https://github.com/JonathanMohr/PHX/archive/refs/tags/v0.1.0-alpha.3.tar.gz"
     sha256 "be81488aefbc8f9f155d576a16b49ea00d098101da7a3287a4e8eea82661fa3d"
 
-    license "Apache-2.0"
+    license all_of: [
+        "Apache-2.0",
+        "MIT",
+        "Unicode-DFS-2016"
+    ]
 
     depends_on "nasm" => :build
     depends_on "llvm" => :build
