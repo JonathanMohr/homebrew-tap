@@ -24,7 +24,7 @@ class Phx < Formula
         ENV.prepend_path "PATH", Formula["lld"].opt_bin
         
         # build
-        system "python3", "-m", "build", "-v", version
+        system "python3", "-m", "build", "-t", "none", "-v", version
 
         # Install dist/
         prefix.install Dir[".dist/*"]
