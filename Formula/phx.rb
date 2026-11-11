@@ -2,8 +2,8 @@ class Phx < Formula
     desc "Disk-image creation and manipulation"
     homepage "https://github.com/JonathanMohr/PHX"
 
-    url "https://github.com/JonathanMohr/PHX/archive/refs/tags/v0.1.0-alpha.3.2.tar.gz"
-    sha256 "e09327e3d3f72bac97912a88792bd7ded5ffae90d43095dd46dd225af98981e8"
+    url "https://github.com/JonathanMohr/PHX/archive/refs/tags/v0.1.0-alpha.3.2-actually.tar.gz"
+    sha256 "429edfbe9820b50e74510d76c932329e1350522b93da02983cc3f5ac7459b193"
 
     license all_of: [
         "Apache-2.0",
@@ -16,7 +16,7 @@ class Phx < Formula
     depends_on "lld" => :build
     depends_on "python@3.12" => :build
 
-    version "v0.1.0-alpha.3.2"
+    version "v0.1.0-alpha.3.2-actually"
 
     def install
         # set PATH
