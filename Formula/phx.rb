@@ -2,8 +2,8 @@ class Phx < Formula
     desc "Disk-image creation and manipulation"
     homepage "https://github.com/JonathanMohr/PHX"
 
-    url "https://github.com/JonathanMohr/PHX/archive/refs/tags/v0.1.0-alpha.3b.tar.gz"
-    sha256 "f96464bc43bf57c9078f0d40cb51b885458df9894d24ddb51e44463327736104"
+    url "https://github.com/JonathanMohr/PHX/archive/refs/tags/v0.1.0-alpha.3.2.tar.gz"
+    sha256 "e09327e3d3f72bac97912a88792bd7ded5ffae90d43095dd46dd225af98981e8"
 
     license all_of: [
         "Apache-2.0",
@@ -16,7 +16,7 @@ class Phx < Formula
     depends_on "lld" => :build
     depends_on "python@3.12" => :build
 
-    version "v0.1.0-alpha.3b"
+    version "v0.1.0-alpha.3.2"
 
     def install
         # set PATH
@@ -24,10 +24,10 @@ class Phx < Formula
         ENV.prepend_path "PATH", Formula["lld"].opt_bin
         
         # build
-        system "python3", "-m", "build", "-t", "none", "-v", version
+        system "python3", "-m", "build", "-t", "none", "--no-root", "-v", version
 
         # Install dist/
-        prefix.install Dir[".dist/*"]
+        prefix.install Dir["dist/*"]
     end
 
     test do
